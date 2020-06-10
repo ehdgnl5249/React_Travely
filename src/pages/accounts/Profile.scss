@@ -1,0 +1,12 @@
+.profile {
+  display: grid;
+  gap: 1rem; // 서로간의 간격
+  grid-template-columns: repeat(3, 1fr); // 같은 비율로 1:1:1 3개를 만듦
+  grid-template-areas: "header header header";
+
+  // background-color: lightyellow;
+  // border: 3px solid #333;
+  width: 1024px;
+  max-width: 100%;
+  margin: 10px auto;
+}

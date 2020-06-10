@@ -1,0 +1,43 @@
+.btn-form {
+  display: flex;
+  width: 250px;
+  margin-left: 175px;
+  justify-content: space-around;
+}
+
+.naver-btn {
+  display: flex;
+}
+
+.kakao-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 6px;
+  background: #e7f711;
+  color: rgb(31, 30, 30);
+  border: 0px transparent;
+
+  text-align: center;
+  // margin: 10px auto;
+
+  &:hover {
+    background: #f0ff17;
+    opacity: 0.9;
+  }
+}
+.fb-button {
+  width: 45px;
+  height: 45px;
+  border-radius: 6px;
+  background: #3b5998;
+  color: white;
+
+  border: 0px transparent;
+  text-align: center;
+  // margin: 0 auto;
+
+  &:hover {
+    background: #3b5998;
+    opacity: 0.9;
+  }
+}

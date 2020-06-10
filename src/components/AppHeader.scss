@@ -1,0 +1,20 @@
+.header {
+  display: flex; // 한줄로
+  justify-content: space-between; // 좌우정렬
+  align-items: center;
+  grid-area: header;
+  margin-bottom: 10px;
+  max-width: 1080px;
+  border: 0 solid #000;
+  .search {
+    width: 450px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    .search {
+      width: 150px;
+    }
+  }
+}

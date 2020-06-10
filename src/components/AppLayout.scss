@@ -1,0 +1,55 @@
+.app {
+  display: grid;
+  gap: 1rem; // 서로간의 간격
+  grid-template-columns: repeat(3, 1fr); // 같은 비율로 1:1:1 3개를 만듦
+  grid-template-areas:
+    "header header header"
+    "contents contents sidebar"
+    "footer footer footer";
+  font-family: "Noto Sans KR";
+  // background-color: lightyellow;
+  // border: 3px solid #333;
+  width: 1080px;
+  max-width: 100%;
+  margin: 10px auto;
+
+  .contents {
+    grid-area: contents;
+    width: 600px;
+    justify-self: center;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+
+  .footer {
+    grid-area: footer;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contents {
+    margin-top: 60px;
+    //width: 80%;
+    // grid-area: contents;
+    // width: 200px;
+    // justify-self: center;
+  }
+  .sidebar {
+    .ant-card.ant-card-bordered.ant-card-small {
+      display: None;
+    }
+    .ant-btn.ant-btn-primary.ant-btn-block {
+      width: 250px;
+      margin-right: -30px;
+    }
+    .ant-card-head {
+      display: None;
+    }
+    .ant-card-body {
+      display: None;
+    }
+  }
+}
